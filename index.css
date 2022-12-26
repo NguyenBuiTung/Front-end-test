@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  color: #636363;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.layout {
+  display: flex;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.layout-left {
+  background-color: #191718;
+  width: 10%
+}
+.layout-right{
+    width: 90%;
+}
+.layout-left h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  padding-top: 14px;
+  padding-bottom: 11px;
+  padding-left: 16px;
+  color: #aaaaaa;
+  border-bottom: 1px solid #5c5c5c;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.carousel {
+  margin-top: 30px;
+  text-align: center;
+  background-color: #efefef;
+}
+.carousel h1 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 38px 151px;
+}
+.carousel p {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 0 269px;
+  padding-bottom: 38px;
+}
+.products {
+  margin-top: 40px;
+}
+.products .row .col {
+  display: flex;
+  gap: 50px ;
+}
+.products .row .col .item {
+  width: 33.33%;
+ 
+}
+.products .row .col .card-body {
+  display: flex;
+}
+.products .row .col .card-body img {
+  /* width: 128px;
+  height: 128px; */
+}
+.products .row .col .item h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 18px;
+}
+.products .row .col .card-body p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.products .row .col .card-footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+footer {
+  margin-top: 182px;
+}
+footer p {
+  padding: 30px 0;
+}
+@media screen and (max-width:768px){
+    .layout-left h2 {
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 19px;
+        /* identical to box height */
+        padding-top: 14px;
+        padding-bottom: 11px;
+        padding-left: 16px;
+        color: #aaaaaa;
+        border-bottom: 1px solid #5c5c5c;
+      }
+    .products .row .col{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+      .products .row .col .item {
+        width: 100%;
+      }
+}
+@media screen and (max-width:576px){
+    .products .row .col{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+      .products .row .col .item {
+        width: 100%;
+      }
+}
